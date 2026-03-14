@@ -1,0 +1,109 @@
+/* ФіксМан - Global Styles */
+
+/* Color Variables */
+:root {
+  /* Primary Blue */
+  --blue-50: #eff6ff;
+  --blue-100: #dbeafe;
+  --blue-200: #bfdbfe;
+  --blue-300: #93c5fd;
+  --blue-400: #60a5fa;
+  --blue-500: #3b82f6;
+  --blue-600: #2563eb;
+  --blue-700: #1d4ed8;
+  --blue-800: #1e40af;
+  --blue-900: #1e3a8a;
+  
+  /* Gray */
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
+  --gray-400: #9ca3af;
+  --gray-500: #6b7280;
+  --gray-600: #4b5563;
+  --gray-700: #374151;
+  --gray-800: #1f2937;
+  --gray-900: #111827;
+  --sky:-400 #00BFFF
+  
+  /* Messenger Colors */
+  --telegram: #0088cc;
+  --viber: #7360f2;
+  --whatsapp: #25d366;
+  --phone: #2563eb;
+  
+  /* Social Colors */
+  --youtube: #ff0000;
+  --facebook: #1877f2;
+  --instagram: #e4405f;
+  
+  /* Accents */
+  --green-100: #dcfce7;
+  --green-600: #16a34a;
+  --purple-100: #f3e8ff;
+  --purple-600: #9333ea;
+  --orange-100: #ffedd5;
+  --orange-600: #ea580c;
+  --cyan-100: #cffafe;
+  --cyan-600: #0891b2;
+}
+
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--gray-50);
+}
+
+/* Animations */
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(37, 99, 235, 0.4); }
+  50% { box-shadow: 0 0 40px rgba(37, 99, 235, 0.6); }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.animate-bounce-slow {
+  animation: bounce 1.5s infinite;
+}
+
+/* Gradients */
+.gradient-bg {
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #1e40af 100%);
+}
+
+/* Interactive Elements */
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.messenger-btn:hover {
+  transform: scale(1.05);
+}
+/* Header */
+
+.logo { display: flex; align-items: center; gap: 10px; font-size: 1.4rem; font-weight: 700; color: var(--primary); }
+.logo-icon { width: 200px; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem; }
+.logo-icon1 { width: 100px; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem; }
+
+
+.background1: #128ecc;
+.background: linear-gradient(90deg, rgba(18, 142, 204, 1) 100%, rgba(87, 199, 133, 1) 100%, rgba(237, 221, 83, 1) 100%);
